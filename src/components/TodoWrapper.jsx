@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { EditTodoForm } from "./EditTodoForm";
@@ -42,7 +43,7 @@ export const TodoWrapper = () => {
 
   return (
     <div className="TodoWrapper">
-      <h1>Listify</h1>
+      <h1>listify</h1>
       <p>Vamos, Lets Get it!</p>
       <TodoForm addTodo={addTodo} />
       {/* display todos */}
@@ -59,6 +60,7 @@ export const TodoWrapper = () => {
           />
         )
       )}
+      <p className="footer">© 2024 listify • Built by <a href="https://github.com/mmwandera" target="_blank" rel="noreferrer">Mark Wandera</a></p>
     </div>
   );
 };
